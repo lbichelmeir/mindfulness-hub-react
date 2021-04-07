@@ -41,6 +41,7 @@ html {
   text-align: center;
   justify-content: center;
   font-size: 5vw;
+  
 }
 
 
@@ -49,8 +50,11 @@ html {
   font-family: 'Mali', cursive;
   text-align: center; 
   justify-content: center;
-  /* margin-left: 50px; */
-  font-size: 35px;
+  font-size: 40px;
+  /* font-family: 'La Belle Aurore', cursive; */
+  font-family: 'Shadows Into Light Two', cursive;
+  letter-spacing: 5px;
+  color: #6c5b7b;
   
 }
 .dailywin_container {
@@ -61,7 +65,6 @@ html {
 .dailywin {
   border: 3px solid lavender;
   box-shadow: 5px 10px lavender;
-  
   border-radius: 5px;
   /* background-color: lavender; */
   max-width: 500px;
@@ -76,25 +79,81 @@ html {
 }
 
 .dailywin h4 {
-  font-family: 'Mali', cursive;
+  /* font-family: 'Mali', cursive; */
+  /* font-family: 'La Belle Aurore', cursive; */
+  font-family: 'Shadows Into Light Two', cursive;
   margin-left: 15px;
   font-size: 16px;
 
 }
-
+.dailywin_button_div {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
 .dailywin_button {
-  background-color: lavender;
-  border-color: lavender;
+  background-color: #d0d1ff;
+  border-color: #d0d1ff;
   border-radius: 10px;
   padding: 20px 180px;
-  margin: 0 auto;
-  text-align: center;
-  justify-content: center;
   font-size: 20px;
-  font-family: 'Mali', cursive;
-  
+  font-family: 'Shadows Into Light Two', cursive;
+  /* font-family: 'Mali', cursive; */
 }
 
+.dailywin_button:hover {
+  opacity: 0.6;
+}
+
+
+/* ----------- ADD DAILY WIN ----------- */
 input {
   font-family: 'Shadows Into Light Two', cursive;
+  border: none;
+  background-color: lavender;
+  letter-spacing: 1.5px;
+  padding: 2px 10px;
+  font-size: 15px;
+}
+
+
+.newEntry_container {
+  border: 3px solid lavender;
+  border-radius: 5px;
+  background-color: lavender;
+  max-width: 500px;
+  padding: 2px 10px;
+  font-family: 'Shadows Into Light Two', cursive;
+  letter-spacing: 1.5px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+
+}
+.newEntry_date {
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+.newEntry_wins {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.newEntry_wins input {
+  margin-bottom: 10px;
+}
+
+.newEntry_button {
+  background-color: #d0d1ff;
+  border-radius: 5px;
+  padding: 5px 40px;
+  margin: 0 auto;
+  letter-spacing: 1.5px;
+  /* box-shadow: 5px 10px #d0d1ff; */
+}
+
+.newEntry_button:hover {
+  opacity: 0.6;
 }

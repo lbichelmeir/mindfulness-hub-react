@@ -25,13 +25,13 @@ const AddDailyWin = ({ onAdd} ) => {
     }
 
     const onSubmit = (e) => {
-        e.prevent.Default()
+        e.preventDefault()
         console.log(e)
-        if(!currentEntry) {
+        if(!currentEntry.date) {
             alert('Please add your entry')
             return
         }
-        onAdd({currentEntry})
+        onAdd({...currentEntry})
 
         setCurrentEntry(initialEntryValue)
     }
@@ -39,8 +39,8 @@ const AddDailyWin = ({ onAdd} ) => {
 
 
     return (
-        <form onSubmit={onSubmit}>
-            <div> 
+        <form className="newEntry_container"onSubmit={onSubmit} autoComplete="new-password">
+            <div className="newEntry_date"> 
                 <label>Entry</label>
                 <input 
                     type='text'
@@ -48,36 +48,46 @@ const AddDailyWin = ({ onAdd} ) => {
                     value={currentEntry.date}
                     name="date"
                     onChange={handleChange}
+                    autoComplete="new-password"
+                    
                 />
             </div>
-            <div> 
-                <label>1. </label>
+            <div className="newEntry_wins"> 
+                {/* <label>1. </label> */}
                 <input 
                     type='text'
                     placeholder='Win #1'
                     value={currentEntry.win1}
                     name="win1"
                     onChange={handleChange}
+                    autoComplete="new-password"
+                    
+                  
                 />
 
-                <label>2. </label>
+                {/* <label>2. </label> */}
                 <input 
                     type='text'
                     placeholder='Win #2'
                     value={currentEntry.win2}
                     name="win2"
                     onChange={handleChange}
+                    autoComplete="new-password"
+                    
+                    
                 />
 
-                <label>3. </label>
+                {/* <label>3. </label> */}
                 <input 
                     type='text'
                     placeholder='Win #3'
                     value={currentEntry.win3}
                     name="win3"
                     onChange={handleChange}
+                    autoComplete="new-password"
+                    
                 />
-                <input type='submit' value='Add Entry'/>
+                <input type='submit' value='Add Entry'className="newEntry_button"/>
             </div>
 
         </form>

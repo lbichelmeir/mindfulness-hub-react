@@ -37,19 +37,18 @@ function DailyWinsComponent() {
 
     const addEntry = (entry) => {
         console.log(entry)
-        // const id =Math.floor(Math.random()*1000)+1
-        // const newEntry = {id, ...entry}
-        // setWins([...wins, newEntry])
+        const id =Math.floor(Math.random()*1000)+1
+        console.log(id)
+        const newEntry = {id, ...entry}
+        setWins([...wins, newEntry])
+
     }
     return (
         <div className="dailywin_container">
+            <div className="dailywin_button_div">
             <button className="dailywin_button"onClick={onClick}>New Entry</button>
+            </div>
             {showAddEntry && <AddDailyWin onAdd={addEntry}/>}
-
-            
-
-
-
             {wins.map(win => <DailyWin key={win.id} win={win}/>)}
             
         </div>
