@@ -9,7 +9,7 @@ function DailyWinsComponent() {
     const [wins, setWins] = useState([
         {
             id: 1,
-            date: "April 4, 2021",
+            date: "February 4, 2021",
             win1: "learnt the basics of React",
             win2: "created my personal portfolio from scratch",
             win3: "created React projects" 
@@ -24,7 +24,7 @@ function DailyWinsComponent() {
         },
         {
             id: 3,
-            date: "February 1, 2021",
+            date: "April 1, 2021",
             win1: "finished reading Circe",
             win2: "painted with Gouache",
             win3: "learnt how to play Sound of Silence on the ukulele!" 
