@@ -8,11 +8,7 @@ const AddDailyWin = ({ onAdd} ) => {
         win2: "",
         win3: "",
     }
-    // const [date, setDate]=useState('')
-    // const [win1, setWin1]=useState('')
-    // const [win2, setWin2]=useState('')
-    // const [win3, setWin3]=useState('')
-
+    
     const [currentEntry, setCurrentEntry] = useState(initialEntryValue);
     
 

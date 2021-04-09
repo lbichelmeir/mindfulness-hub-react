@@ -46,7 +46,11 @@ function DailyWinsComponent() {
     return (
         <div className="dailywin_container">
             <div className="dailywin_button_div">
-            <button className="dailywin_button"onClick={onClick}>New Entry</button>
+            <button 
+                className="dailywin_button"
+                onClick={onClick}>
+                    {showAddEntry ? 'Close Entry': 'Add Entry'}
+                </button>
             </div>
             {showAddEntry && <AddDailyWin onAdd={addEntry}/>}
             {wins.map(win => <DailyWin key={win.id} win={win}/>)}
